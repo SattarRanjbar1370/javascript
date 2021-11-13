@@ -2,4 +2,7 @@
 
 let n = 0;
 
-while (
+while (n<10){
+    console.log("n = " + n);
+    n++;
+}
