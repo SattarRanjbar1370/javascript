@@ -4,21 +4,21 @@ let n = 1;
 let number_prompt;
 let total = 0;
 
-do{
+do {
     number_prompt = prompt("plese enter add: ");
     number_prompt = parseInt(number_prompt);
-    if(0 < number_prompt && number_prompt <= 20){
+    if (0 < number_prompt && number_prompt <= 20) {
         total = number_prompt + total
-        console.log("   -- "+ n + " --   ::: " + number_prompt);
-        console.log( "                     ::::>>>  " + total)
+        console.log("   -- " + n + " --   ::: " + number_prompt);
+        console.log("                     ::::>>>  " + total)
         n++;
-    }else{
+    } else {
         alert("Invalid number, please trys '0 to 20'  ")
     }
-    
-    
-}while(total < 50);
+
+
+} while (total < 50);
 
 let avrege;
-avrege = total/(n - 1);
+avrege = total / (n - 1);
 console.log("   :::  avrage ===>  " + avrege);
