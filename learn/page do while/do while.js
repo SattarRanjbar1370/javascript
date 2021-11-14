@@ -13,9 +13,7 @@ do{
         console.log( "                     ::::>>>  " + total)
         n++;
     }else{
-        alert("Invalid number, please trys '0 to 20'  ");
-        number_prompt = prompt("plese enter add: ");
-        number_prompt = parseInt(number_prompt);
+        alert("Invalid number, please trys '0 to 20'  ")
     }
     
     
