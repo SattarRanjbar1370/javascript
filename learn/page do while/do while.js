@@ -20,3 +20,7 @@ do{
     
     
 }while(total < 50);
+
+let avrege;
+avrege = total/(n - 1);
+console.log("   :::  avrage ===>  " + avrege);
