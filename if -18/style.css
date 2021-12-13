@@ -1,4 +1,5 @@
 body {
+    direction: rtl;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,9 +8,9 @@ body {
 div.textbox {
     width: 60%;
     height: 60%;
-    padding: 5px;
+    padding: 25px;
     font-size: 1.4em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: 3px solid rgb(54, 35, 65);
     border-radius: 15px;
     box-shadow: 6px 3px 16px 0px black;
