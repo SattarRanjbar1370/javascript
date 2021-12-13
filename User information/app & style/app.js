@@ -15,3 +15,8 @@ yearAge = year - age;
 textView = "your name = " + Name + " " + familly + "\n" + "city = " + city + "\n" + "years age = " + yearAge;
 
 document.getElementById('textbox').innerText = textView;
+let a = Number.isNaN(yearAge);
+
+if (a == true) {
+    document.getElementById('textbox').innerText = "\n error syntax ... ! \n please try and reload page";
+}
