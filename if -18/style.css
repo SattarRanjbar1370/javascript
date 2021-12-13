@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.textbox {
+    width: 60%;
+    height: 60%;
+    padding: 5px;
+    font-size: 1.4em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 3px solid rgb(54, 35, 65);
+    border-radius: 15px;
+    box-shadow: 6px 3px 16px 0px black;
+}
