@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    font-size: 1.3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.boxOne {
+    width: 60%;
+    height: 60%;
+    padding: 20px;
+    border: 3px solid rgb(76, 76, 104);
+    border-radius: 20px;
+}
