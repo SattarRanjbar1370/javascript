@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -33,5 +34,20 @@ div.wrapper div.box {
   background-color: #460dcc52;
   -webkit-box-shadow: 5px 5px 15px 1px #040404;
           box-shadow: 5px 5px 15px 1px #040404;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.wrapper div.box div {
+  direction: ltr;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
