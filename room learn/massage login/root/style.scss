@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Ubuntu:wght@300&display=swap');
+
+// font-family: 'Redressed', cursive;
+// font-family: 'Ubuntu', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../image/pexels-pratik-gupta-2748716.jpg');
+    background-size: cover;
+    font-family: 'Redressed', cursive;
+}
