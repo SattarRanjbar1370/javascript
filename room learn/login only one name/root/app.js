@@ -11,12 +11,15 @@ userName = 'ali';
 password = 'Sattar0132831';
 userNameLoad = prompt('please enter your name:');
 
-if (userNameLoad == userName) {
+if (userNameLoad.toLowerCase() == userName) {
     passwordLoad = prompt('please enter your password:');
     if (passwordLoad == password) {
         box_log.innerHTML = '<div class="error-user error" id="error-user">welcome<br>Enable special services for better access</div>';
     } else {
         box_error_pass.innerHTML = '<div class="error-user error" id="error-user">error password, please try</div>';
+        let errorUser = document.getElementById('error-user');
+        errorUser.style.color = '#ff6e6e';
+        errorUser.style.fontSize = '2rem';
     }
 } else {
     box_error_user.innerHTML = '<div class="error-user error" id="error-user">error user name, please try</div>';
