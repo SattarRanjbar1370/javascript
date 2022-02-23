@@ -6,11 +6,10 @@ receiveData = String(receiveData);
 
 let arrayRecive = Array.from(receiveData);
 console.log(arrayRecive);
+console.log('Number of digits : ', arrayRecive.length);
 let total = 0;
 
 
-// total += Number(arrayRecive[1]);
-// console.log(total)
 for (var i = 0; i < arrayRecive.length; i++) {
     total += Number(arrayRecive[i]);
 }
