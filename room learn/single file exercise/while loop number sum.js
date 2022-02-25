@@ -1,9 +1,10 @@
-let division, remaining, i, divisionPass;
-divisionPass = Number(prompt('please enter number'));
+let division, remaining, i, divisionPass, sumWhile;
+
+divisionPass = prompt('please enter number');
 while (isNaN(divisionPass)) {
     divisionPass = Number(prompt('please try again enter number'));
 }
-
+sumWhile = 0;
 division = Number(divisionPass);
 console.log('Recived number: ' + division);
 i = 0;
@@ -21,4 +22,6 @@ while (i < divisionPass.length) {
     console.log(remaining + ' <<<<');
     i++;
     console.log('-----------------------------');
+    sumWhile += remaining;
 }
+console.log('sum >>>>>>  ' + sumWhile);
