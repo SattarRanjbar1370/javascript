@@ -15,5 +15,13 @@ while (counter < 2) {
 console.log(basicExponent);
 
 calculateNumbers = basicExponent[0] ** basicExponent[1];
+let displayUser = basicExponent[0] + ' ** ' + basicExponent[1] + ' = ' + calculateNumbers;
 
-console.log(basicExponent[0] + ' ** ' + basicExponent[1] + ' = ' + calculateNumbers);
+console.log(displayUser);
+
+let bodyTag, divContiner, divBox;
+
+bodyTag = document.getElementById('body');
+bodyTag.innerHTML = '<div class="continer" id="continere"></div>';
+divContiner = document.getElementById('continere');
+divContiner.innerHTML = '<div id="box1">' + displayUser + '</div><div id="box2">User input: ' + basicExponent + '</div>';
