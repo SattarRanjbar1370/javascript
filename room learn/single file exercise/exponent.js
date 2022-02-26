@@ -15,7 +15,7 @@ while (counter < 2) {
 console.log(basicExponent);
 
 calculateNumbers = basicExponent[0] ** basicExponent[1];
-let displayUser = basicExponent[0] + ' ** ' + basicExponent[1] + ' = ' + calculateNumbers;
+let displayUser = basicExponent[0] + ' to the power of ' + basicExponent[1] + ' = ' + calculateNumbers;
 
 console.log(displayUser);
 
