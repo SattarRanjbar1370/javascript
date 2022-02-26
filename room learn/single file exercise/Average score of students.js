@@ -1,7 +1,21 @@
 // average score of studdent ...!!
 
 let score, average, receivedData, counter, sumOfNumber;   //  Computable variables
-// receivedData = 0;
+let bodyTag, divContiner, divbox;   // display tag variables
+
+///////////////////////////////////////////////////////////////////////////////////
+///////////////// define the variables displayed to the user //////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+
+bodyTag = document.getElementById('body');
+bodyTag.innerHTML = '<div class="continer" id="continer"></div>';
+divContiner = document.getElementById('continer'); 
+divbox = document.getElementById('continer');
+
+///////////////////////////////////////////////////////////////////////////////////
+////////////////////////// define calculation loop ////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+
 counter = 0;
 score = new Array();
 while (score[counter - 1] != -1) {
@@ -12,6 +26,8 @@ while (score[counter - 1] != -1) {
     counter++;
     console.log(counter + ' <<<<<<');
 }
+// divContiner.innerHTML = '<div class="box">Number of loop repeated : ' + counter + '</div>';
+
 score.pop(); // remove the loop stop condition
 sumOfNumber = 0;
 for (counter = 0; counter < score.length; counter++) {
@@ -19,3 +35,4 @@ for (counter = 0; counter < score.length; counter++) {
 }
 console.log('average: ', sumOfNumber / counter);
 console.log(score);
+divbox.innerHTML = '<div class="box">Average : ' + (sumOfNumber/counter) + '</div><div class="box">Number of loop repeated : ' + counter + '</div><div class="box">While loop members : ' + score + '</div><div class="box">Designer Sattar Ranjbar</div>';
