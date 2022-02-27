@@ -14,8 +14,16 @@ while (stopCondition == true) {
     dataBase[0].name = prompt('name:');
     dataBase[0].familly = prompt('familly:');
     dataBase[0].age = Number(prompt('age:'));
-    dataBase[0].email =prompt('email:');
+    dataBase[0].email = prompt('email:');
     stopCondition = confirm('Do you have another member to register?');
 }
 
 console.log(dataBase);
+
+///////////////////////////////////////////////////////////////////////
+////////////////////////////// display ////////////////////////////////
+///////////////////////////////////////////////////////////////////////
+
+let bodyTag, divContiner, divBox;
+bodyTag = document.getElementById('body').innerHTML = '<div id="continer" class="continer"></div>';
+divContiner = document.getElementById('continer').innerHTML = '<div class="box">Hi, good time<br>please log in to the console to see the result.</div>';
