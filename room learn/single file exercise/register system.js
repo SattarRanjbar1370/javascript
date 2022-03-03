@@ -37,7 +37,10 @@ while (stopCondition == true) {
     stopCondition = confirm('Do you have another member to register?');
 }
 
-console.log(dataBase);
+// console.log(dataBase);
+dataBase.forEach(function(item){
+    console.log(item);
+});
 
 ///////////////////////////////////////////////////////////////////////
 ////////////////////////////// display ////////////////////////////////
