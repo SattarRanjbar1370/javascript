@@ -35,6 +35,7 @@ while (stopCondition == true) {
     };
     dataBase.push(objectModel);
     stopCondition = confirm('Do you have another member to register?');
+    counter++
 }
 
 // console.log(dataBase);
