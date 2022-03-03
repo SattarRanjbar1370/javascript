@@ -27,7 +27,7 @@ while (stopCondition == true) {
     userEmail = prompt('please enter your email: ');
 
     objectModel = {
-        id : counter + 1,
+        id: counter + 1,
         name: userName,
         family: userFamily,
         age: Number(userAge),
@@ -39,8 +39,8 @@ while (stopCondition == true) {
 }
 
 // console.log(dataBase);
-dataBase.forEach(function(item){
-    console.log(item);
+dataBase.forEach(function (item) {
+    console.log('id: ' + item.id + '\t name: ' + item.name + '\t family: ' + item.family + '\t age: ' + item.age + '\t email:' + item.email);
 });
 
 ///////////////////////////////////////////////////////////////////////
