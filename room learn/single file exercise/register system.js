@@ -27,13 +27,14 @@ while (stopCondition == true) {
     userEmail = prompt('please enter your email: ');
 
     objectModel = {
-        id = counter + 1,
+        id : counter + 1,
         name: userName,
         family: userFamily,
         age: Number(userAge),
         email: userEmail
     };
     dataBase.push(objectModel);
+    stopCondition = confirm('Do you have another member to register?');
 }
 
 console.log(dataBase);
