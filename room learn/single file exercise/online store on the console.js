@@ -14,6 +14,9 @@ while (productCondition == true) {
     productName = prompt('enter the product name:');
     id = productCounter + 1;
     productPrice = Number(prompt('enter the product price:'));
+    while (isNaN(productPrice)) {
+        productPrice = Number(prompt('invalid data, please try again \nEnter the price correctly:'));
+    }
     productObject = {
         id: id,
         name: productName,
