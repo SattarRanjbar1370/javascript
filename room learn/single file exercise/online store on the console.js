@@ -68,5 +68,19 @@ while (shopingCondition == true) {
     listShoping.push(searchResult);
     shopingCondition = confirm('Do you have another purchase?');
 }
-console.log(listShoping);
+console.log('///////////////////////////////////////////\n///////////////////////////////////////////');
 
+////////////// calculation loop ///////////////
+
+let calculationShop, showShop
+
+listShoping.forEach(function (item) {
+    showShop = 'id: ' + item.id + '\tname: ' + item.name + '\tprice: ' + item.price;
+    console.log(showShop);
+});
+calculationShop = 0;
+for (var i = 0; i < listShoping.length; i++) {
+    calculationShop += listShoping[i].price;
+}
+console.log('-----------------------------------------');
+console.log('Total amunt: ' + calculationShop);
