@@ -56,10 +56,17 @@ divContiner = document.getElementById('continer').innerHTML = varDisplay;
 ////////////// user shoping ///////////////
 ///////////////////////////////////////////
 
-let listShoping, counterShop, selectItem, searchResult;
-selectItem = prompt('Write the product name:');
-products.some(function (item) {
-    searchResult = item;
-    return item.name == selectItem
-});
-console.log(searchResult);
+let listShoping, counterShop, selectItem, searchResult, shopingCondition;
+listShoping = new Array();
+shopingCondition = confirm('Do you have another purchase?');
+while (shopingCondition == true) {
+    selectItem = prompt('Write the product name:');
+    products.some(function (item) {
+        searchResult = item;
+        return item.name == selectItem
+    });
+    listShoping.push(searchResult);
+    shopingCondition = confirm('Do you have another purchase?');
+}
+console.log(listShoping);
+
