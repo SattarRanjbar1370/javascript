@@ -2,7 +2,7 @@
 
 /////////////// variable ////////////////
 
-let listShoping, products, productCounter, shopingCounter, productCondition, productName, productPrice, id, productObject;
+let products, productCounter, shopingCounter, productCondition, productName, productPrice, id, productObject;
 
 ////////////////////////////////////////
 //////////// product list //////////////
@@ -56,3 +56,10 @@ divContiner = document.getElementById('continer').innerHTML = varDisplay;
 ////////////// user shoping ///////////////
 ///////////////////////////////////////////
 
+let listShoping, counterShop, selectItem, searchResult;
+selectItem = prompt('Write the product name:');
+products.some(function (item) {
+    searchResult = item;
+    return item.name == selectItem
+});
+console.log(searchResult);
