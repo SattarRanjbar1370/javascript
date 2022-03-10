@@ -17,3 +17,15 @@ let dataBase = [
     { id: 14, userName: 'torbat_jam', name: 'torbat', age: 14 },
     { id: 15, userName: 'mmali', name: 'mmadi', age: 19 }
 ];
+
+let conditionOfAge = dataBase.every(function () {
+    return dataBase.age < 18
+})
+
+if (conditionOfAge == true) {
+    alert('Allowed for video chat :)');
+}else{
+    alert('Please exclude people under 18 from chatting');
+}
+
+console.log(conditionOfAge);
