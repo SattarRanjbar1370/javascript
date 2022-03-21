@@ -1,6 +1,6 @@
 // shop room
 
-let shopRoom = [
+let shopRoom = [ // array back end for shoping
     { id: 1, name: 'pen', price: 8000 },
     { id: 2, name: 'book', price: 12000 },
     { id: 3, name: 'body splash', price: 9000 },
@@ -13,27 +13,31 @@ let shopRoom = [
 
 console.log(shopRoom);
 
-let cartUser = [
+let cartUser = [    // array frant for user cart
     { id: 2, name: 'book', price: 12000 },
     { id: 2, name: 'tractor', price: 12000 }
 ];
 
 console.log(cartUser);
 
-let receiveBuy;
-let nameItem;
+let receiveBuy, nameItem, selectItem, addToCartUser;
 
 
 let loadLoop = confirm("Click 'ok' if you want to edit your shoping cart");
 
-console.log(shopRoom[receiveBuy]);
 
-while(loadLoop == true){
-    nameItem = prompt('please enter name item');
-    receiveBuy = shopRoom.findIndex(function(user){
-        return user.name === nameItem
-    });
-
+while (loadLoop == true) {
+    selectItem = prompt('Enter \'1\' if you want to add and \'2\' if you want to delete');
+    if (selectItem == 1) {
+        nameItem = prompt('please enter name item');
+        receiveBuy = shopRoom.findIndex(function (user) {
+            return user.name === nameItem
+        });
+        addToCartUser = shopRoom[receiveBuy];
+    }
+    cartUser.unshift(addToCartUser);
     loadLoop = confirm("Click 'ok' if you want to edit your shoping cart");
 }
+
+console.log(cartUser);
 
