@@ -27,7 +27,7 @@ let loadLoop = confirm("Click 'ok' if you want to edit your shoping cart");
 
 
 while (loadLoop == true) {
-    selectItem = prompt('Enter \'1\' if you want to add');
+    selectItem = prompt('Enter \'1\' if you want to add and  \'2\' if you want to delete');
     if (selectItem == 1) {
         nameItem = prompt('please enter name item for add');
         receiveBuy = shopRoom.findIndex(function (user) {
@@ -35,11 +35,16 @@ while (loadLoop == true) {
         });
         addToCartUser = shopRoom[receiveBuy];
         cartUser.unshift(addToCartUser);
+    } else if (selectItem == 2) {
+        nameItem = prompt('please enter name item for delete');
+        receiveBuy = cartUser.findIndex(function (user) {
+            return user.name === nameItem
+        });
+        cartUser.splice(receiveBuy , 1);
     }
-    selectItem = prompt('Ente \'2\' if you want to delete');
-    if(selectItem == 2){
-        
-    }
+    console.log(cartUser);
+    // selectItem = prompt('Ente \'2\' if you want to delete');
+
     loadLoop = confirm("Click 'ok' if you want to edit your shoping cart");
 }
 
