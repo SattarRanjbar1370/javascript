@@ -18,4 +18,16 @@ let cartUser = [
     { id: 2, name: 'tractor', price: 12000 }
 ];
 
-alert(cartUser);
+console.log(cartUser);
+
+let receiveBuy;
+let nameItem = prompt('please enter name item');
+
+receiveBuy = shopRoom.findIndex(function(user){
+    return user.name === nameItem
+});
+let loadLoop = confirm("Click 'ok' if you want to edit your shoping cart");
+
+console.log(shopRoom[receiveBuy]);
+
+while(loadLoop == true)
