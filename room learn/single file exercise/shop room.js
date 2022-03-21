@@ -21,13 +21,19 @@ let cartUser = [
 console.log(cartUser);
 
 let receiveBuy;
-let nameItem = prompt('please enter name item');
+let nameItem;
 
-receiveBuy = shopRoom.findIndex(function(user){
-    return user.name === nameItem
-});
+
 let loadLoop = confirm("Click 'ok' if you want to edit your shoping cart");
 
 console.log(shopRoom[receiveBuy]);
 
-while(loadLoop == true)
+while(loadLoop == true){
+    nameItem = prompt('please enter name item');
+    receiveBuy = shopRoom.findIndex(function(user){
+        return user.name === nameItem
+    });
+
+    loadLoop = confirm("Click 'ok' if you want to edit your shoping cart");
+}
+
