@@ -12,3 +12,10 @@ let shopRoom = [
 ];
 
 console.log(shopRoom);
+
+let cartUser = [
+    { id: 2, name: 'book', price: 12000 },
+    { id: 2, name: 'tractor', price: 12000 }
+];
+
+alert(cartUser);
