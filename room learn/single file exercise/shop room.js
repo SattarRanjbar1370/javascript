@@ -27,15 +27,19 @@ let loadLoop = confirm("Click 'ok' if you want to edit your shoping cart");
 
 
 while (loadLoop == true) {
-    selectItem = prompt('Enter \'1\' if you want to add and \'2\' if you want to delete');
+    selectItem = prompt('Enter \'1\' if you want to add');
     if (selectItem == 1) {
-        nameItem = prompt('please enter name item');
+        nameItem = prompt('please enter name item for add');
         receiveBuy = shopRoom.findIndex(function (user) {
             return user.name === nameItem
         });
         addToCartUser = shopRoom[receiveBuy];
+        cartUser.unshift(addToCartUser);
     }
-    cartUser.unshift(addToCartUser);
+    selectItem = prompt('Ente \'2\' if you want to delete');
+    if(selectItem == 2){
+        
+    }
     loadLoop = confirm("Click 'ok' if you want to edit your shoping cart");
 }
 
