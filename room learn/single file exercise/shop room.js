@@ -43,11 +43,12 @@ while (loadLoop == true) {
         cartUserTest = cartUser.some(function (item) {
             return item.name == nameItem
         });
-        receiveBuy = cartUser.findIndex(function (user) {
-            return user.name === nameItem
-        });
-        cartUser.splice(receiveBuy, 1);
-
+        if (cartUserTest == true) {
+            receiveBuy = cartUser.findIndex(function (user) {
+                return user.name === nameItem
+            });
+            cartUser.splice(receiveBuy, 1);
+        }
     } else {
         console.log('please enter a valid option')
     }
