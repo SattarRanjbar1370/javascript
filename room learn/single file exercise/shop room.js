@@ -24,18 +24,15 @@ while (loadLoop == true) {
     selectItem = prompt('Enter \'1\' if you want to add and  \'2\' if you want to delete');
     if (selectItem == 1) {
         nameItem = prompt('please enter name item for add');
-        cartUserTest = cartUser.some(function(user){
+        cartUserTest = shopRoom.some(function(user){
             return user.name == nameItem
         });
         if (cartUserTest == true) {
-            // receiveBuy = shopRoom.findIndex(function(user){
-            //     return user.name == nameItem
-            //   });
-            shopRoom.forEach(function(user){
-                addToCartUser = user;
+            receiveBuy = shopRoom.findIndex(function(user){
                 return user.name == nameItem
-            })
-            // addToCartUser = shopRoom[receiveBuy];
+              });
+              console.log(receiveBuy);
+            addToCartUser = shopRoom[receiveBuy];
             cartUser.push(addToCartUser);
         } else {
             console.log('error ...!!\n no item :(')
@@ -49,6 +46,8 @@ while (loadLoop == true) {
         });
         cartUser.splice(receiveBuy, 1);
 
+    }else{
+        console.log('please enter a valid option')
     }
 
 
