@@ -31,7 +31,7 @@ while (loadLoop == true) {
             receiveBuy = shopRoom.findIndex(function (user) {
                 return user.name == nameItem
             });
-            console.log(receiveBuy);
+            // console.log(receiveBuy);
             addToCartUser = shopRoom[receiveBuy];
             cartUser.push(addToCartUser);
         } else {
