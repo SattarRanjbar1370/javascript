@@ -13,3 +13,22 @@ let listOfQuestions = [
 ];
 
 console.log(listOfQuestions)
+
+let prompetAnswer, counter, answerLoop, questions, loadloop, sumQuestion;
+// listOfQuestions[0]['answer'].forEach(function (item) {
+//     answerLoop.push(`${counter + 1} ${". "} ${item}`);
+// })
+// prompetAnswer = listOfQuestions[counter]['question'] + '/n' + answerLoop;
+
+listOfQuestions.forEach(function (item) {
+    counter = 1;
+    answerLoop = [];
+    questions = item.question;
+    item.answer.forEach(function (ans) {
+        loadloop = counter + '. ' + ans;
+        answerLoop.push(loadloop);
+        counter++;
+    })
+    sumQuestion = answerLoop.join('\n');
+    prompetAnswer = prompt(questions + '\n' + sumQuestion);
+});
