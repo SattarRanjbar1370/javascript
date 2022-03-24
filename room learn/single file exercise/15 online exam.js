@@ -14,12 +14,8 @@ let listOfQuestions = [
 
 console.log(listOfQuestions)
 
-let prompetAnswer, counter, answerLoop, questions, loadloop, sumQuestion;
-// listOfQuestions[0]['answer'].forEach(function (item) {
-//     answerLoop.push(`${counter + 1} ${". "} ${item}`);
-// })
-// prompetAnswer = listOfQuestions[counter]['question'] + '/n' + answerLoop;
-
+let prompetAnswer, counter, answerLoop, questions, loadloop, sumQuestion, totalPoints;
+totalPoints = 0;
 listOfQuestions.forEach(function (item) {
     counter = 1;
     answerLoop = [];
@@ -31,4 +27,11 @@ listOfQuestions.forEach(function (item) {
     })
     sumQuestion = answerLoop.join('\n');
     prompetAnswer = prompt(questions + '\n' + sumQuestion);
+    if (prompetAnswer == item.answerTrue) {
+        totalPoints++;
+    } else {
+        console.log(false);
+    }
 });
+console.log(totalPoints);
+alert('Total points: ' + totalPoints);
