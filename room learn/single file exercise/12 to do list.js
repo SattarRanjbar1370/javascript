@@ -1,5 +1,5 @@
 
-let plan, sendToDoList, testToDoList, arrayIndx, optionList, confirmList, toDoList;
+let plan, sendToDoList, testToDoList, arrayIndx, optionList, confirmList, toDoList, counter;
 toDoList = [
     { id: 1, text: 'sport', Status: true },
     { id: 2, text: 'contant the father', Status: true },
@@ -8,6 +8,7 @@ toDoList = [
 console.log('to do list: ', toDoList);
 confirmList = confirm('Do you went to edit the list?');
 while (confirmList) {
+    counter = 1;
     optionList = prompt('1. add reminder\n2. remove reminder\n3. chenge status');
     if (optionList == 1) {
         plan = prompt('write a plan: ');
@@ -28,6 +29,10 @@ while (confirmList) {
                 return item.text == plan
             });
             toDoList.splice(arrayIndx, 1);
+            toDoList.forEach(function (item) {
+                item.id = counter;
+                counter++;
+            })
             console.log('to do list: ', toDoList);
         } else {
             console.log('input error\nplease try again');
