@@ -32,6 +32,28 @@ if (optionList == 1) {
     } else {
         console.log('input error\nplease try again');
     }
-} 
+} else if (optionList == 3) {
+    plan = prompt('enter the name of the job you did: ');
+    testToDoList = toDoList.some(function (item) {
+        return item.text == plan
+    });
+    if (testToDoList) {
+        arrayIndx = toDoList.findIndex(function (item) {
+            return item.text == plan
+        });
+        plan = prompt('1. work done\n2. work not done');
+        if (plan == 1) {
+            toDoList[arrayIndx].Status = true;
+            console.log('to do list: ', toDoList);
+        } else if (plan == 2) {
+            toDoList[arrayIndx].Status = false;
+            console.log('to do list: ', toDoList);
+        } else {
+            console.log('enter the correct option :(');
+        }
+    }
+} else {
+    console.log('enter the correct option :(');
+}
 
 // console.log(arrayIndx);
