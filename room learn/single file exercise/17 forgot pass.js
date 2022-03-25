@@ -9,4 +9,17 @@ let dataBase = [
     {id: 7,userName: 'mostafa', pass: 'thHkF123'},
 ];
 
+let receiveName, receivePass, searchName;
 
+receiveName = prompt('please enter user name:');
+searchName = dataBase.some(function(item){
+    return receiveName === item.userName
+});
+if(searchName){
+    searchName = dataBase.find(function(item){
+        return receiveName === item.userName
+    });
+    
+}
+
+// console.log(searchName);
