@@ -26,8 +26,18 @@ if (searchName) {
         recoveryPass = prompt('Password recovery:\n 1. yes\n 2. no');
         if (recoveryPass === '2') {
             alert('end')
+        } else if (recoveryPass === '1') {
+            searchPass = +prompt('enter your ID to recoveer your password: ');
+
+            if (searchPass === searchName.id) {
+                alert('your password: ' + searchName.pass);
+            }
+        } else {
+            alert('invalid data!');
         }
     }
+} else {
+    alert('User not found');
 }
 
 // console.log(searchName);
