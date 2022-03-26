@@ -7,7 +7,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="hourglass_full_white_48dp.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
     <title>receive timer</title>
     <style>
         .conutiner {
@@ -28,11 +28,10 @@
             backdrop-filter: blur(3px);
             box-shadow: 1px 1px 15px 1px black;
             display: flex;
+            flex-direction: row-reverse;
             justify-content: center;
             align-items: center;
-            font-family: 'Palette Mosaic', cursive;
-
-            pexels-pixabay-48896.jpg
+            font-family: 'Nunito', sans-serif;
         }
 
         .box div {
@@ -41,7 +40,6 @@
             font-size: 1rem;
             border-bottom: 3px solid black;
             margin: 0 15px;
-            /* padding-bottom: 1px; */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -59,6 +57,8 @@
             <div id="hours" class="hours box-load">00</div>
         </div>
     </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
