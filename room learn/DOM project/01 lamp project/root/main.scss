@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+div.continer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        &.box {
+            img {
+                width: 30%;
+                height: auto;
+            }
+        }
+
+        &.bot {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+
+            bottom {
+                width: 40px;
+                height: 20px;
+                border: none;
+                background-color: rgb(11, 160, 11);
+            }
+        }
+    }
+}
