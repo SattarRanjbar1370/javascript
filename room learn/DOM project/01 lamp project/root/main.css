@@ -22,11 +22,25 @@ div.continer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+div.continer div.box {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 div.continer div.box img {
-  width: 30%;
+  width: 50%;
   height: auto;
+  margin: 0 auto;
 }
 
 div.continer div.bot {
@@ -40,10 +54,24 @@ div.continer div.bot {
           justify-content: center;
 }
 
-div.continer div.bot bottom {
-  width: 40px;
-  height: 20px;
+div.continer div.bot button {
+  width: 80px;
+  height: 30px;
+  margin: 0 10px;
   border: none;
+  border-radius: 10px;
   background-color: #0ba00b;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+div.continer div.bot button:hover {
+  -webkit-box-shadow: 1px 1px 8px 1px black;
+          box-shadow: 1px 1px 8px 1px black;
+}
+
+div.continer div.bot button:focus {
+  -webkit-box-shadow: 1px 1px 1px 1px black;
+          box-shadow: 1px 1px 1px 1px black;
 }
 /*# sourceMappingURL=main.css.map */
