@@ -1,11 +1,17 @@
 
 let imgSelect = document.getElementById('image');
-
-function cleckTurnOn() {
-    imgSelect.src = 'image/turn on.png';
-}
-function clickTurnOff(){
-    imgSelect.src = 'image/turn of.png';
+let buttunClick = document.getElementById('button');
+let boolclick = false;
+function clickTurnOn() {
+    if (boolclick === false) {
+        imgSelect.src = 'image/turn on.png';
+        buttunClick.innerText = 'turn off';
+        boolclick = true;
+    } else {
+        imgSelect.src = 'image/turn of.png';
+        buttunClick.innerText = 'turn on';
+        boolclick = false;
+    }
 }
 
 
