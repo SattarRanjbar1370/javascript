@@ -15,7 +15,7 @@ let boxAlertOn, boxAlertOff, searchData, testData, receiveName, receivePassI, bo
 boxalert = document.getElementById('boxAlert')
 boxAlertOn = document.getElementById('boxAlert');
 boxAlertOff = document.getElementById('boxAlert')
-boxalert.style.display = 'none';
+boxalert.style.display = 'none'; // Hide notification box
 function receiveLogIn() {
     receiveName = inputNmae.value;
     receivePass = inputPass.Value;
@@ -24,18 +24,18 @@ function receiveLogIn() {
 testData = dataBase.every(function (item) {
     return item.userName === receiveName
 });
-searchData = dataBase.find(function (item) {
+searchData = dataBase.find(function (item) { // Download data from the database
     return item.userName === receiveName
 });
-if (testData) {
+if (testData) { // Send login box
     boxAlertOn.style.display = 'flex';
     boxAlertOn.style.backgroundColor = 'green';
     boxAlertOn.innerText = 'Login done'
-} else {
+} else { // Send error box
     boxAlertOff.style.display = 'flex';
 }
 
-setTimeout(function () {
+setTimeout(function () { // Hide notification box
     boxalert.style.display = 'none';
 }, 5000)
 
