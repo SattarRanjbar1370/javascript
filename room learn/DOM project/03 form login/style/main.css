@@ -4,4 +4,108 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.wrapper form {
+  width: 100%;
+  height: 50vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+  -ms-grid-rows: (1fr)[10];
+      grid-template-rows: repeat(10, 1fr);
+}
+
+.wrapper form input {
+  color: #0776c5;
+  padding: 0 10px;
+  font-size: 2rem;
+  font-family: tahoma;
+  background: #1e1f22;
+  border: none;
+  width: 100%;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 8;
+  grid-column: 2/10;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.wrapper form input.input-1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.wrapper form input.input-2 {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  grid-row: 4/6;
+}
+
+.wrapper form input:focus {
+  outline: none;
+  border: 2px solid #0776c5;
+  -webkit-box-shadow: 0 2px 15px #0776c5;
+          box-shadow: 0 2px 15px #0776c5;
+}
+
+.wrapper form button {
+  font-size: 2rem;
+  font-familly: tahoma;
+  color: #0776c5;
+  background: transparent;
+  border: 2px solid #0776c5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 8;
+  grid-column: 2/10;
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
+  grid-row: 7/9;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.wrapper form button:focus {
+  background-color: #0776c5;
+  top: 0;
+  left: 0;
+  color: black;
+  -webkit-box-shadow: 0 2px 15px #78baea;
+          box-shadow: 0 2px 15px #78baea;
+}
+
+.alert {
+  width: 70%;
+  height: auto;
+  padding: 15px 10px;
+  background: #2395e6;
+  color: white;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: tahoma;
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */
