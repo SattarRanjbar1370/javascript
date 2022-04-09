@@ -11,7 +11,7 @@ let dataBase = [
 
 let inputNmae = document.querySelector('.input-1');
 let inputPass = document.querySelector('.input-2');
-let boxAlertOn, boxAlertOff, searchData, testData, receiveName, receivePassI, boxalert;
+let boxAlertOn, boxAlertOff, searchData, testData, receiveName, boxalert;
 boxalert = document.getElementById('boxAlert')
 boxAlertOn = document.getElementById('boxAlert');
 boxAlertOff = document.getElementById('boxAlert')
@@ -19,6 +19,7 @@ boxalert.style.display = 'none'; // Hide notification box
 function receiveLogIn() {
     receiveName = inputNmae.value;
     receivePass = inputPass.Value;
+    console.log(receiveName, receivePass)
 }
 
 testData = dataBase.every(function (item) {
@@ -38,5 +39,4 @@ if (testData) { // Send login box
 setTimeout(function () { // Hide notification box
     boxalert.style.display = 'none';
 }, 5000)
-
 console.log(searchData);
