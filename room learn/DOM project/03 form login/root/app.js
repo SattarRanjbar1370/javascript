@@ -28,4 +28,20 @@ function setAlertPass() {
     }
 }
 
+let selectInputName = document.getElementById('inputName');
+selectInputName.setAttribute('onfocus', 'setAlertTest()');
+selectInputName.setAttribute('onblur', 'setAlertTest2()')
+let selectBody = document.getElementsByTagName('body');
+let setDiv = document.createElement('span');
+selectBody[0].append(setDiv);
+setDiv.setAttribute('class','alert-set');
 
+
+function setAlertTest() {
+    setDiv.style.display = 'block';
+    setDiv.innerText = 'select item';
+}
+
+function setAlertTest2(){
+    setDiv.style.display = 'none';
+}
