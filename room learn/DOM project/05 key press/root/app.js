@@ -2,10 +2,9 @@
 let $ = document;
 
 let inputText = $.getElementById('textValue');
-inputText.setAttribute('onKeypress', 'pressValue()');
+inputText.addEventListener('keypress', pressValue);
 let inputPass = $.getElementById('passValue');
-inputPass.setAttribute('onKeypress', 'pressValue2()');
-
+inputPass.addEventListener('keypress', pressValue2);
 function pressValue() {
     let smallSelect = $.getElementById('helpId');
     if (inputText.value.length < 5) {
