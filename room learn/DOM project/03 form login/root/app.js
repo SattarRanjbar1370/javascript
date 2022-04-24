@@ -1,5 +1,5 @@
 //
-
+let $ = document;
 let selectTag = document.getElementById('alert');
 let selectInput = document.querySelectorAll('input');
 // console.log(selectInput[0],selectInput[1])
@@ -34,7 +34,7 @@ selectInputName.setAttribute('onblur', 'setAlertTest2()')
 let selectBody = document.getElementsByTagName('body');
 let setDiv = document.createElement('span');
 selectBody[0].append(setDiv);
-setDiv.setAttribute('class','alert-set');
+setDiv.setAttribute('class', 'alert-set');
 
 
 function setAlertTest() {
@@ -42,6 +42,15 @@ function setAlertTest() {
     setDiv.innerText = 'select item';
 }
 
-function setAlertTest2(){
+function setAlertTest2() {
     setDiv.style.display = 'none';
 }
+
+
+// chenge background automatical
+
+let colorBack = ['#21202d', '#0b370c', '#474006'];
+
+// let setcolor = $.getElementById('wrapper');
+// setcolor.style.background = 'blue';
+
