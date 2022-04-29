@@ -12,11 +12,15 @@ let selectCity = document.getElementById('box-city');
 let setElemnt;
 
 function setValue() {
-    selectCity.innerHTML = '<option selected>Select one</option>';
-    dataCountry[selectBoxCountry.value].forEach(element => {
-        setElemnt = document.createElement('option');
-        setElemnt.setAttribute('value', element);
-        setElemnt.innerText = element;
-        selectCity.append(setElemnt);
-    });
+    if (selectBoxCountry.value == 'select country') {
+        selectCity.innerHTML = '<option selected>Select one</option>';
+    } else {
+        selectCity.innerHTML = '';
+        dataCountry[selectBoxCountry.value].forEach(element => {
+            setElemnt = document.createElement('option');
+            setElemnt.setAttribute('value', element);
+            setElemnt.innerText = element;
+            selectCity.append(setElemnt);
+        });
+    }
 }
