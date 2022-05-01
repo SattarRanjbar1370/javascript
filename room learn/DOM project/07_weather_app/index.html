@@ -18,14 +18,40 @@
     <div class="bg-basic d-flex justify-content-center align-items-center" id="bg-basic">
 
         <!-- box weather -->
-        <div class="box-weather bg-info bg-opacity-25 rounded-3 shadow" id="">
+
+        <div class="box-weather bg-info bg-opacity-50 rounded-3 shadow pt-4" id="">
+            <!-- search box -->
             <form class="mb-3 p-2 mx-2 row justify-content-center">
-                <input type="text" class="form-floating col-8" name="" id="text-search" aria-describedby="helpId" placeholder="">
+                <input type="text" class="form-floating col-8" name="" id="text-search" aria-describedby="helpId"
+                    placeholder="">
                 <button type="button" class="btn btn-outline-dark rounded-3 col-2 mx-2" id="btn-search">
                     <i class="bi bi-search"></i>
                 </button>
             </form>
-        </div>
+
+            <!-- info weather -->
+            <div class="mx-3 d-none">
+                <div class="">
+                    <h3 class="display-5 my-3 mx-2" id="city">
+                        tehran
+                    </h3>
+                </div>
+                <div class="mx-5 d-flex align-items-center">
+                    <p class="d-block fs-1 mx-1" id="favicon">
+                        <i class="bi bi-cloud-drizzle-fill"></i>
+                    </p>
+                    <span class="d-block mx-2" id="icon-weather">23︒</span>
+                </div>
+                <div class="">
+                    <p class="small">
+                        Lorem ipsum dolor sit.
+                    </p>
+                    <p class="small">
+                        Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                </div>
+            </div>
+        </div> 
     </div>
 
     <!-- JavaScript Bundle with Popper -->
