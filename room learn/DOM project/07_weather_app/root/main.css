@@ -1,0 +1,8 @@
+/*  */
+
+div.bg-basic{
+    height: 100vh;
+    background: url('https://img.freepik.com/free-vector/hand-painted-background-violet-orange-colours_23-2148427578.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
