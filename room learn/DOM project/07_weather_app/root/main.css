@@ -1,8 +1,15 @@
-/*  */
+/* background */
 
 div.bg-basic{
     height: 100vh;
-    background: url('https://img.freepik.com/free-vector/hand-painted-background-violet-orange-colours_23-2148427578.jpg');
     background-size: cover;
     background-attachment: fixed;
+}
+
+/* box weather */
+
+div.box-weather{
+    width: 500px;
+    backdrop-filter: blur(10px);
+    border: 3px solid rgba(22, 24, 29, 0.648);
 }
